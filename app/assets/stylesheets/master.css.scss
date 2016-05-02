@@ -1,6 +1,6 @@
 body {
   background: url('/assets/concrete_seamless.png');
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
   background:url('/assets/congruent_outline.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #888888;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFC2A3;
+  font-family: 'sinkin_sans500_medium';
+  font-size:26px;
 }
 
 .booyah-box {
