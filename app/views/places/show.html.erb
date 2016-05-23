@@ -4,27 +4,27 @@
   <br/>
   <br/>
   <p><%= @place.description %></p>
+  <br/>
   
-  <h3>Photos</h3>
+  
+  
+  
+  <h2 class="pull-left">Photos</h2>
+  <!-- Button trigger modal -->
+  <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#pictureModal">
+    Add a photo
+  </button>
+  <div class="clear"></div>
   <% @place.photos.each do |photo| %>
   <div>
     <blockquote>
-      <div class="img-thumbnail">
-        <%= image_tag photo.picture %>
-      </div>
+      <%= image_tag(photo.picture, class: "img-thumbnail") %>
       <%= photo.caption %>
     </blockquote>
   </div>
   <% end %>
   
-  <div class="col-xs-10 col-xs-offset-1">
-    <h3 class="pull-left">Add a Photo</h3>
-    <!-- Button trigger modal -->
-    <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#pictureModal">
-      Upload a picture
-    </button>
-    <div class="clear"></div>
-  </div>
+  
   
   <br />
   
@@ -65,7 +65,7 @@
 <div class="clear"></div>
 
 <div class="col-xs-10 col-xs-offset-1">
-  <h1 class="pull-left">Comments</h1>
+  <h2 class="pull-left">Comments</h2>
   <!-- Button trigger modal -->
   <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#myModal">
     Add a comment
