@@ -14,13 +14,14 @@
   <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#pictureModal">
     Add a photo
   </button>
+  
   <div class="clear"></div>
+  <br />
+  
   <% @place.photos.each do |photo| %>
   <div>
-    <blockquote>
-      <%= image_tag(photo.picture, class: "img-thumbnail") %>
-      <%= photo.caption %>
-    </blockquote>
+    <%= image_tag(photo.picture, :class => "img-responsive") %>
+    <%= photo.caption %>
   </div>
   <% end %>
   
