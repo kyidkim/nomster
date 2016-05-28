@@ -79,13 +79,8 @@ blockquote p {
   margin: auto;
 }
 
-.carousel-control.left {
-  
-}
-
-.carousel-control.right {
-  left: auto;
-  right: 0;
+.carousel-control.left, .carousel-control.right {
+  background-image: none
 }
 
 .carousel-caption {
@@ -98,6 +93,6 @@ blockquote p {
   left:0;
 }
 
-.carousel {
-  box-shadow: 0px 3px 8px #2a2a2a;
+.row-fluid {
+  word-wrap: break-word;
 }

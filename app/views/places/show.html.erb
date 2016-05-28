@@ -6,9 +6,6 @@
   <p><%= @place.description %></p>
   <br/>
   
-  
-  
-  
   <h2 class="pull-left">Photos</h2>
   <!-- Button trigger modal -->
   <button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#pictureModal">
@@ -25,12 +22,9 @@
   </div>
   <% end %>
   
-  
-  
   <br />
   
   <% if @place.latitude.present? && @place.longitude.present? %>
-  
   <script>
   function initMap() {
     var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
